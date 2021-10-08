@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/product_list__label__products"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/product_list__label__show_details"
+                tools:text="T2006" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/product_list__label__show_details"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp0"
+                android:src="@drawable/ic_next"
+                app:layout_constraintTop_toTopOf="@id/product_list__label__products"
+                app:layout_constraintStart_toEndOf="@id/product_list__label__products"
+                app:layout_constraintBottom_toBottomOf="@id/product_list__label__products"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

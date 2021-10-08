@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">GoliathNationalBank</string>
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="app_name" translatable="false">GoliathNationalBank</string>
+    <string name="exit_app">Salir de la aplicación</string>
+    <string name="products">Productos</string>
+    <string name="product_number_transactions" translatable="false">%1$d trans.</string>
+    <string name="product_total_amount" translatable="false">%1$.2f €</string>
 </resources>

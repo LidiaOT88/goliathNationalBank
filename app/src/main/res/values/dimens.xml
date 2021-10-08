@@ -8,6 +8,7 @@
     <!-- /Splash dimens -->
 
     <!-- List dimens -->
+    <dimen name="product_list_products_margin_vertical">16dp</dimen>
     <!-- /List dimens -->
 
     <!-- Detail dimens -->

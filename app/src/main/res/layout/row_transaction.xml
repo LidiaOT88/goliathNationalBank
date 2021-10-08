@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:id="@+id/product_detail__label__amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginVertical="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/product_detail__divider__medium"
+                tools:text="238,22" />
+
+            <View
+                android:id="@+id/product_detail__divider__medium"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toTopOf="@id/product_detail__label__amount"
+                app:layout_constraintBottom_toBottomOf="@id/product_detail__label__amount"
+                app:layout_constraintStart_toEndOf="@id/product_detail__label__amount"
+                app:layout_constraintEnd_toStartOf="@id/product_detail__label__currency"/>
+
+            <!--TODO: cambiar por imagen, buscar vectorial-->
+            <TextView
+                android:id="@+id/product_detail__label__currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="end"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toTopOf="@id/product_detail__divider__medium"
+                app:layout_constraintBottom_toBottomOf="@id/product_detail__divider__medium"
+                app:layout_constraintStart_toEndOf="@id/product_detail__divider__medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="CAD" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
